@@ -1,0 +1,6 @@
+1 - Destravar a cabeça de impressão
+2 - Desligar a impressora
+3 - Ligar a impressora com o botão azul pressionado
+4 - Aguardar solicitar para travar a cabeça
+5 - Selecione a opção Factory Default
+6 - Pressione qualquer tecla, a impressora deve ser resetada e depois reiniciará.

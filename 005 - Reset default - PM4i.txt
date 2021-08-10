@@ -1,0 +1,17 @@
+1) Desligue a impressora;
+
+2) Levante a cabeça de impressão;
+
+3) Pressione e mantenha pressionado o botão F5;
+
+4) Ligue a impressora;
+
+5) Quando a impressora emitir um pequeno bip solte o botão;
+
+6) Faça rapidamente a sequencia: F4>> F2>> F2>> F1;
+
+7) Vai aparecer no display a mensagem: "Factory Default YES or NO". Tecle ENTER para YES.
+
+A impressora vai apagar toda a memória (inclusive o emulador, caso tiver) e voltar para a configuração inicial.
+
+No campo a direita seguem dois roteiros para alterar a linguagem usada nas impressoras que estejam rodando o Multiple Firmware ( IPL, FingerPrint, DSIM e ZSIM gravados na Flash).

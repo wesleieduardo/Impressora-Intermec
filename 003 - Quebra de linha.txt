@@ -1,0 +1,22 @@
+Descrição
+Orientações sobre como utilizar o comando PX (PRBOX) para realizar a quebra de linhas na impressora intermec. Este comando consiste em desenhar uma caixa (box) para delimitar o espaço para a impressão de uma variável.
+
+Equipamento(s) em que se aplica
+Todas as impressoras Intermec/Honeywell
+
+Comando utilizado para a quebra de linha
+PP 278,657:FT "Swiss 721 Bold BT",8,0,82
+PX 48,450,1,"TESTE DE IMPRESSÃO COM QUEBRA DE LINHA XXXXXXXXX XXX XXX XXX",5,-2
+Detalhamento do comando
+PX 48,450,0: Esta é a primeira alteração a ser executada, definindo qual o tamanho do BOX que irá conter os textos.
+48 = Altura do box
+450 = Largura do box
+0 = Define o tamanho da largura da linha que será impressa no box. Caso esteja em 0, a linha que delimita o box não será impressa
+
+PP 278,657: Posição do eixo X e Y onde o BOX será impresso na etiqueta
+
+Swiss 721 Bold BT",8,0,82: Tipo da fonte, altura e largura
+
+5,-2: Espaçamento entre o texto e o BOX
+5: Distância horizontal entre o BOX e o texto que será impresso
+-2: Distância vertical entre o BOX e o texto que será impresso
