@@ -1,0 +1,16 @@
+Cenário:
+Ao incluir o comando PRBOX em uma etiqueta para impressora intermec o texto com a quebra de linha não é impresso.
+
+Comando utilizado para a quebra de linha:
+Abaixo segue sintaxe do comando utilizado para realizar a quebra de linha
+
+PP 625,930:FT "Swiss 721 Bold BT",13,0,72
+PX 90,670,0,"TESTE DE IMPRESSÃO COM QUEBRA DE LINHA XXXXXXXXX",5,-2
+
+Equipamento(s) em que se aplica:
+Todas as impressoras Intermec/Honeywell
+
+Solução:
+Ativar a configuração CLIP DEFAULT = ON no equipamento. Segue abaixo procedimento para ativar esta opção na impressora PX4i:
+
+Setup > Print Defs > Clip Default > Clip Default = ON

@@ -1,0 +1,35 @@
+Abaixo segue exemplo de como desenvolver uma etiqueta com troca de variáveis, onde o layout com as informações fixas fica inserido na memória da impressora.
+
+Equipamentos compatíveis: PC23d, PC43d, PC43t, PM23, PM43, PC42, PM42
+Linguagem de impressão: Direct Protocol
+
+Para o arquivo armazenado na memória da impressora, deve seguir a seguinte estrutura abaixo:
+
+INPUT ON
+LAYOUT INPUT "c:NOME_DO_LAYOUT.LAY" 
+AN 7
+(referência aos arquivos de imagem, se houver)
+CLIP ON
+CLIP BARCODE ON
+XORMODE OFF
+AN 9
+(referência ao barcode a ser impresso na etiqueta)
+NASC -2
+AN 7
+(referência ao texto/variáveis a ser impresso na etiqueta)
+LAYOUT END
+Já para o arquivo armazenado na memória do LK200:
+
+INPUT ON
+LAYOUT RUN "" 
+LAYOUT RUN "c:NOME_DO_LAYOUT.lay" 
+<comando STX>variavel 01
+variavel 02
+variavel 03
+<comando EOT>
+PF
+
+Retirado de:
+https://support.honeywellaidc.com/s/article/How-to-store-label-format-and-sent-variable-data-to-print-responding-label-in-DP
+
+Em anexo no repositório, arquivos com este demonstração (Exemplo_armazenar_memoria.zip)
